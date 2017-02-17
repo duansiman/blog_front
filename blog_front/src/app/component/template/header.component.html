@@ -1,0 +1,11 @@
+<div class="header">
+	<span>
+		<div>LOGO</div>
+		<div>个人博客</div>
+	</span>
+
+	<span *ngFor="let menu of menus">
+		<img src="{{menu.imgUrl}}"/>
+		<div>{{menu.name}}</div>
+	</span>
+</div>
