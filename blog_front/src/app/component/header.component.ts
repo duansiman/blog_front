@@ -13,6 +13,7 @@ import { MenuService }          from './../service/menu.service';
 export class HeaderComponent implements OnInit { 
 	
 	menus: Menu[];
+	selectedMenu: Menu;
 
 	constructor(
     	public menuService: MenuService
@@ -26,5 +27,9 @@ export class HeaderComponent implements OnInit {
 		this.getMenus();
 		console.log(this.menus);
 	}
+
+	selectMenu(menu: Menu): void {
+    	this.selectedMenu = menu;
+  	}
 
 }

@@ -1,12 +1,77 @@
-section {
-	height: 20%;
+.header {
+	width: 60%;
+	margin:0 auto;
+	height: 80px;
+	background-color: white;
 }
 
-.header {
-	width: 80%;
-	min-height: 50%;
-	height: 50%;
-	margin:0 auto;
-	background-image: url(./../images/index/header_u0.png);
-	background-color: white;
+.div_logo, .div_menu,.div_search {
+	float: left;
+	text-align: center;
+	width: 11%;
+	height: 100%;
+	font-size: 16px;
+}
+
+.div_menu img {
+	width: 25px;
+	height: 24px;
+
+}
+
+.div_search {
+	width: 23%;
+	font-size: 12px;
+}
+
+.div_content {/*垂直居中*/
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div_search input, .div_search button {
+	float: left;
+	height: 100%;
+}
+
+.div_search img {
+	float: left;
+	width: 25px;
+	height: 24px;
+	margin-left: 3px;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div_search input {
+	padding: 0px;
+	margin: 0px;
+	width: 67%;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+
+.div_search button {
+	width: 22%;
+	background-color: #2FB3FF;
+	padding:0; 
+	margin: 0;
+	outline: none;/*去掉选中效果*/
+	list-style-type:none;
+	border-style: none;
+}
+
+.div_search_border {
+	border: 1px solid #2FB3FF;
+	height: 35px;
+	margin-left: 1px;
+	width: 98%;
+}
+
+.selected {
+	background-color: #2FB3FF;
+	color: white;
 }
