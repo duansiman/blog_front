@@ -10,6 +10,7 @@ import { InMemoryDataService }  from './../memory/in-memory-data.service';
 
 import { AppComponent }     from './../component/app.component';
 import { HeaderComponent }  from './../component/header.component';
+import { BannerComponent }  from './../component/banner.component';
 
 import { MenuService }      from './../service/menu.service';
 
@@ -23,7 +24,8 @@ import { MenuService }      from './../service/menu.service';
 
   declarations: [
    	AppComponent ,
-   	HeaderComponent
+   	HeaderComponent,
+       BannerComponent
   ],
 
   providers: [
