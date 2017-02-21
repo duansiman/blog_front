@@ -11,6 +11,10 @@ import { InMemoryDataService }  from './../memory/in-memory-data.service';
 import { AppComponent }     from './../component/app.component';
 import { HeaderComponent }  from './../component/header.component';
 import { BannerComponent }  from './../component/banner.component';
+import { HotComponent }  from './../component/hot.component';
+import { LabelComponent }  from './../component/label.component';
+import { LikeComponent }  from './../component/like.component';
+import { ArticleComponent }  from './../component/article.component';
 
 import { MenuService }      from './../service/menu.service';
 
@@ -25,7 +29,11 @@ import { MenuService }      from './../service/menu.service';
   declarations: [
    	AppComponent ,
    	HeaderComponent,
-       BannerComponent
+       BannerComponent,
+       HotComponent,
+       LabelComponent,
+       LikeComponent,
+       ArticleComponent
   ],
 
   providers: [

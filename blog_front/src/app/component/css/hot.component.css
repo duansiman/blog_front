@@ -1,0 +1,16 @@
+.div_hot {
+	width: 100%;
+	height: 564px;
+	background-color: white;
+}
+
+.div_name {
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;		
+}
+
+.div_hot img {
+	margin:0px;
+	padding: 0px;
+}
