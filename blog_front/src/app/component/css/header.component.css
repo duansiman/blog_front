@@ -15,6 +15,11 @@
 
 .div_logo {
 	width: 160px;
+	cursor:pointer;
+}
+
+.div_menu {
+	cursor:pointer;
 }
 
 .div_search {

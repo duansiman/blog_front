@@ -20,7 +20,8 @@ export class HeaderComponent implements OnInit {
     ) { }
 
 	  getMenus(): void {
-	    this.menus = this.menuService.getMenus();
+	    //this.menus = this.menuService.getMenus();
+	    this.menuService.getMenusByHttp().then(menus => this.menus=menus);
 	  }
 
 	ngOnInit(): void {
