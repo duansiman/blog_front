@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
 	  getMenus(): void {
 	    this.menuService.getMenusByHttp()
 				.then(response => {
-					console.log(response.text());
+					response.json().data as Menu[];
 				})
 				.catch(e => console.log(e));
 	  }
