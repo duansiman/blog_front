@@ -29,6 +29,7 @@ export class HeaderComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.getMenus();
+		console.log(this.menus);
 	}
 
 	selectMenu(menu: Menu): void {
