@@ -1,0 +1,23 @@
+.div_article {
+	width: 865px;	
+}
+
+.div_title {
+	width: 100%;
+	height: 541px;
+	background-color: white;
+	margin-top: 15px;	
+}
+
+.div_name {
+	text-align: left;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-top: 10px;		
+}
+
+.div_title img {
+	width: 98%;
+	margin:0px;
+	padding: 0px;
+}

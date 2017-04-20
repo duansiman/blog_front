@@ -1,0 +1,90 @@
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: white;
+}
+
+
+.div_logo, .div_menu,.div_search {
+	float: left;
+	text-align: center;
+	width: 120px;
+	height: 100%;
+	font-size: 16px;
+}
+
+.div_logo {
+	width: 160px;
+	cursor:pointer;
+}
+
+.div_menu {
+	cursor:pointer;
+}
+
+.div_search {
+	width: 320px;
+	font-size: 10px;
+}
+
+.div_menu img {
+	width: 25px;
+	height: 24px;
+}
+
+.div_content {
+	/*垂直居中*/
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div_search input, .div_search button {
+	float: left;
+	height: 100%;
+}
+
+.div_search img {
+	float: left;
+	width: 25px;
+	height: 24px;
+	margin: 0 2.5px;
+	/*垂直居中*/
+	position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+}
+
+.div_search input {
+	padding: 0px;
+	margin: 0px;
+	width: 226px;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+
+.div_search button {
+	width: 60px;
+	background-color: #2FB3FF;
+	color:white;
+	padding:0; 
+	margin: 0;
+	/*去掉选中效果*/
+	outline: none;
+	list-style-type:none;
+	border-style: none;
+}
+
+.div_search_border {
+	border: 1px solid #2FB3FF;
+	border-radius:2px;
+	height: 35px;
+	margin: 0 1px;
+	width: 316;
+}
+
+.selected {
+	background-color: #2FB3FF;
+	color: white;
+}
