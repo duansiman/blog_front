@@ -22,8 +22,7 @@ export class HeaderComponent implements OnInit {
 	  getMenus(): void {
 	    this.menuService.getMenusByHttp()
 				.then(response => {
-					console.log(response.json().data);
-					this.menus = response.json().data.data;
+					this.menus = response.json().data;
 					console.log(this.menus);
 				})
 				.catch(e => console.log(e));
