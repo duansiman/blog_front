@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 
-import { Menu, MENUS } from './../entity/menu';
+import { Menu } from './../entity/menu';
 import { Headers, Http, Response,RequestOptions, URLSearchParams} from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
