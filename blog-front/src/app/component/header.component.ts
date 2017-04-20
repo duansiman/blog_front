@@ -22,14 +22,15 @@ export class HeaderComponent implements OnInit {
 	  getMenus(): void {
 	    this.menuService.getMenusByHttp()
 				.then(response => {
-					response.json().data as Menu[];
+					console.log(response.json().data);
+					this.menus = response.json().data.data;
+					console.log(this.menus);
 				})
 				.catch(e => console.log(e));
 	  }
 
 	ngOnInit(): void {
 		this.getMenus();
-		console.log(this.menus);
 	}
 
 	selectMenu(menu: Menu): void {
