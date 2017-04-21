@@ -12,21 +12,19 @@ import { MenuService }          from './../service/menu.service';
 
 export class HeaderComponent implements OnInit { 
 	
-	menus: Menu[];
-	selectedMenu: Menu;
+	private menus: Menu[];
+	private selectedMenu: Menu;
 
-	constructor(
-    	public menuService: MenuService
-    ) { }
+	constructor(private menuService: MenuService) {}
 
-	  getMenus(): void {
-	    this.menuService.getMenusByHttp()
-				.then(response => {
-					this.menus = response.json().data;
-					console.log(this.menus);
-				})
-				.catch(e => console.log(e));
-	  }
+	getMenus(): void {
+		this.menuService.getMenusByHttp()
+			.then(response => {
+				this.menus = response.json().data;
+				console.log(this.menus);
+			})
+			.catch(e => console.log(e));
+	}
 
 	ngOnInit(): void {
 		this.getMenus();
@@ -34,6 +32,6 @@ export class HeaderComponent implements OnInit {
 
 	selectMenu(menu: Menu): void {
     	this.selectedMenu = menu;
-  	}
+  }
 
 }
