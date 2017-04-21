@@ -12,8 +12,8 @@ import { MenuService }          from './../service/menu.service';
 
 export class HeaderComponent implements OnInit { 
 	
-	private menus: Menu[];
-	private selectedMenu: Menu;
+	menus: Menu[];
+	selectedMenu: Menu;
 
 	constructor(private menuService: MenuService) {}
 
