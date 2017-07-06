@@ -29,13 +29,13 @@ export class HeaderComponent implements OnInit {
 	ngOnInit(): void {
 		//this.getMenus();
     this.menus = [
-      { id:'1', name: '首页' },
-      { id:'2', name: 'Java' },
-      { id:'3', name: 'MySQL' },
-      { id:'4', name: 'Linux' },
-      { id:'5', name: 'NoSQL' },
-      { id:'6', name: '前端' },
-      { id:'7', name: 'Git' },
+      { id:'1', name: '首页', img_url:'app/component/images/index/u4.png'},
+      { id:'2', name: 'Java', img_url:'app/component/images/index/u10.png' },
+      { id:'3', name: 'MySQL', img_url:'app/component/images/index/u12.png' },
+      { id:'4', name: 'Linux', img_url:'app/component/images/index/u16.png' },
+      { id:'5', name: 'NoSQL', img_url:'app/component/images/index/u20.png' },
+      { id:'6', name: '前端', img_url:'app/component/images/index/u24.png' },
+      { id:'7', name: 'Git', img_url:'app/component/images/index/u24.png' },
     ];
 	}
 

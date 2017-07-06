@@ -3,14 +3,14 @@
 		[class.selected]="selectedMenu === NULL">
 		<div class="div_content">
 			<div>LOGO</div>
-			<div>个人博客</div>
+			<div>博客爬虫</div>
 		</div>
 	</div>
 
 	<div class="div_menu" *ngFor="let menu of menus" (click)="selectMenu(menu)"
 		[class.selected]="menu === selectedMenu">
 		<div class="div_content">
-			<!--<img src="{{menu.imgUrl}}"/>-->
+			<img src="{{menu.imgUrl}}"/>
 			<div>{{menu.name}}</div>
 		</div>
 	</div>
