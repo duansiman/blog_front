@@ -1,5 +1,4 @@
 export class Menu {
-	id: string;
+	router: string;
 	name: string;
-  imgUrl: string;
 }

@@ -1,21 +1,16 @@
-.div_html {
-	width: 1200px;
+.div_html {	
+}
+
+#wrapper_header, #wrapper_footer {
 	margin: 0 auto;
-}
-
-.div_body {
 	width: 1200px;
-	margin-top: 15px;
+	text-align: center;
 }
 
-.div_left {
-	width: 880px;
-	float: left;
-}
-
-.div_right {
-	width: 320px;
-	float: left;
+#wrapper_body {
+	width:100%;
+	background: url(./../../../assets/images/footside.jpg) bottom center no-repeat;
+	overflow: hidden;
 }
 
 .div_article_head {

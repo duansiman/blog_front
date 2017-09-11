@@ -1,26 +1,53 @@
-<div class="header">
-	<div class="div_logo" (click)="selectMenu(NULL)"
-		[class.selected]="selectedMenu === NULL">
-		<div class="div_content">
-			<div>LOGO</div>
-			<div>博客爬虫</div>
-		</div>
-	</div>
+<header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">个人博客模板古典系列之——江南墨卷</div>
+      <div class="search f_r">
+        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="搜索" type="submit">
+        </form>
+      </div>
+      <div class="blank"></div>
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a routerLink="/home">网站首页</a></li>
+            <li (mouseenter)="showCategory()" (mouseleave)="hideCategory()"><a href="#">技术文章</a>
+              <blog-menu *ngIf="isShowCategory" [type]="0" ></blog-menu>
+            </li>
+            <li (mouseenter)="showDiary()" (mouseleave)="hideDiary()"><a href="#">我的日记</a>
+              <blog-menu *ngIf="isShowDiary" [type]="1" ></blog-menu>
 
-	<div class="div_menu" *ngFor="let menu of menus" (click)="selectMenu(menu)"
-		[class.selected]="menu === selectedMenu">
-		<div class="div_content">
-			<img src="{{menu.imgUrl}}"/>
-			<div>{{menu.name}}</div>
-		</div>
-	</div>
-
-	<!--<div class="div_search">
-		<div class="div_search_border div_content">
-			<img src="assets/images/index/u30.png">
-			<input type="text" name="keyword" placeholder="搜你想搜的...">
-			<button>搜索</button>
-			<div style="clear: both;"></div>
-		</div>
-	</div>-->
-</div>
+              <!-- <ul>
+                <li><a href="newslistpic.html">个人日记</a></li>
+                <li><a href="newslistpic.html">学习笔记</a></li>
+              </ul> -->
+            </li>
+            <li (mouseenter)="showAbout()" (mouseleave)="hideAbout()"><a href="#" >关于我</a>
+              <blog-menu *ngIf="isShowAbout" [type]="2" ></blog-menu>
+              <!-- <ul>
+                <li><a href="about.html">个人简介</a></li>
+                <li><a href="listpic.html">个人相册</a></li>
+              </ul> -->
+            </li>
+            <li><a routerLink="/message">给我留言</a> </li>
+          </ul>
+        </div>
+      </nav>
+<!--       <SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+</SCRIPT>  -->
+    </div>
+  </header>

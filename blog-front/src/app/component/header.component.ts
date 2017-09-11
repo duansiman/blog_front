@@ -1,46 +1,43 @@
-import { Component, OnInit }    from '@angular/core';
-
-import { Menu } 				from './../entity/menu';
-import { MenuService }          from './../service/menu.service';
+import { Component, OnInit,Input}    from '@angular/core';
 
 @Component({
   moduleId: module.id,
   selector: 'blog-header',
   templateUrl: 'template/header.component.html',
-  styleUrls: ['css/header.component.css']
+  styleUrls: ['css/header.component.css','css/base.css','css/main.css','css/index.css']
 })
 
 export class HeaderComponent implements OnInit {
 
-	menus: Menu[];
-	selectedMenu: Menu;
+  	isShowAbout = false;
+    isShowCategory = false;
+    isShowDiary = false;
 
-	constructor(private menuService: MenuService) {}
+    ngOnInit(): void {
+    }
 
-	// getMenus(): void {
-	// 	this.menuService.getMenusByHttp()
-	// 		.then(response => {
-	// 			this.menus = response.json().data;
-	// 			console.log(this.menus);
-	// 		})
-	// 		.catch(e => console.log(e));
-	// }
+  	showAbout():void {
+  		this.isShowAbout = true;
+  	}
 
-	ngOnInit(): void {
-		//this.getMenus();
-    this.menus = [
-      { id:'1', name: '首页', imgUrl:'assets/images/index/u4.png'},
-      { id:'2', name: 'Java', imgUrl:'assets/images/index/u10.png' },
-      { id:'3', name: 'MySQL', imgUrl:'assets/images/index/u12.png' },
-      { id:'4', name: 'Linux', imgUrl:'assets/images/index/u16.png' },
-      { id:'5', name: 'NoSQL', imgUrl:'assets/images/index/u20.png' },
-      { id:'6', name: '前端', imgUrl:'assets/images/index/u24.png' },
-      { id:'7', name: 'Git', imgUrl:'assets/images/index/u24.png' },
-    ];
-	}
+  	hideAbout(): void {
+  		this.isShowAbout = false;
+  	}
 
-	selectMenu(menu: Menu): void {
-    	this.selectedMenu = menu;
-  }
+    showCategory():void {
+      this.isShowCategory = true;
+    }
+
+    hideCategory(): void {
+      this.isShowCategory = false;
+    }
+
+    showDiary():void {
+      this.isShowDiary = true;
+    }
+
+    hideDiary(): void {
+      this.isShowDiary = false;
+    }
 
 }

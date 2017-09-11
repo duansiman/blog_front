@@ -1,0 +1,19 @@
+/*footer*/
+footer {
+	background: url(./../../../assets/images/footerbg.png) bottom center repeat-x;
+	padding: 20px 0;
+	color: #ccc;
+	margin: 20px 0 0 0;
+	width: 100%;
+}
+.footer {
+	width: 100%;
+	margin: auto;
+	overflow: hidden
+}
+.footer p {
+	line-height: 24px;
+}
+.textr {
+	text-align: right
+}

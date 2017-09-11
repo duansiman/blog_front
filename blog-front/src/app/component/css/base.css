@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* 共用css */
+
+/*topnav*/
+.topnav {
+	line-height: 50px;
+	height: 50px;
+	color: #000;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.58);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	box-shadow: #333 0px 2px 2px
+}
+.topnav a {
+	color: #000;
+	font-weight: bold;
+	margin: 0 5px
+}
+#wrapper {
+	background: url(./../../../assets/images/footside.jpg) bottom center no-repeat;
+	overflow: hidden;
+}
+
+.menu {
+	position: relative;
+	margin-left: 70px;
+	padding-top: 10px
+}
+.menu li {
+	float: left;
+	width: 110px;
+	text-align: center;
+	position: relative;
+	line-height: 46px;
+}
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold
+}
+.menu ul {
+	position: relative;
+	background: url(./../../../assets/images/footerbg.png);
+	z-index: 300;
+}
+.menu li ul {
+	display: none;
+	width: 110px;
+	position: absolute;
+	TOP: 40px;
+	left: 0;
+}
+.menu li ul li {
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px
+}
+.menu li ul li a {
+	font-size: 14px
+}
+.menu li ul li a:hover {
+	background: #000
+}
+/*links*/
+.links {
+	width: 1000px;
+	margin: 30px auto;
+	overflow: hidden
+}
+.links h2 {
+	/*background: url(./../../../assets/images/linksbg.png) no-repeat left top;*/
+	height: 38px
+}
+.links li {
+	float: left;
+	border: #CCC 1px solid;
+	padding: 5px;
+	margin: 10px 10px
+}
+.links li img {
+	height: 51px
+}
+.links li img:hover {
+	opacity: 0.5
+}
