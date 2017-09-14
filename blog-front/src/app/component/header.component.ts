@@ -1,4 +1,7 @@
-import { Component, OnInit,Input}    from '@angular/core';
+import { Component, OnInit}    from '@angular/core';
+
+import {CategoryService} from "../service/category.service";
+import {Category} from "../entity/category";
 
 @Component({
   moduleId: module.id,
@@ -13,7 +16,12 @@ export class HeaderComponent implements OnInit {
     isShowCategory = false;
     isShowDiary = false;
 
+    categories: Category[];
+
+    constructor(private categoryService: CategoryService) { }
+
     ngOnInit(): void {
+      this.categories = this.categoryService.getCategory();
     }
 
   	showAbout():void {

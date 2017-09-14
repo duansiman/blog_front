@@ -17,7 +17,7 @@
           <ul class="menu">
             <li><a routerLink="/home">网站首页</a></li>
             <li (mouseenter)="showCategory()" (mouseleave)="hideCategory()"><a href="#">技术文章</a>
-              <blog-menu *ngIf="isShowCategory" [type]="0" ></blog-menu>
+              <blog-menu *ngIf="isShowCategory" [type]="0" [categories]="categories"></blog-menu>
             </li>
             <li (mouseenter)="showDiary()" (mouseleave)="hideDiary()"><a href="#">我的日记</a>
               <blog-menu *ngIf="isShowDiary" [type]="1" ></blog-menu>
