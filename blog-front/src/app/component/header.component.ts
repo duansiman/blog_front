@@ -7,7 +7,7 @@ import {Category} from "../entity/category";
   moduleId: module.id,
   selector: 'blog-header',
   templateUrl: 'template/header.component.html',
-  styleUrls: ['css/header.component.css','css/base.css','css/main.css','css/index.css']
+  styleUrls: ['css/header.component.css','css/base.css','css/main.css']
 })
 
 export class HeaderComponent implements OnInit {

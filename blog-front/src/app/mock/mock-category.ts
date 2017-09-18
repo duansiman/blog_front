@@ -1,7 +1,7 @@
 /**
  * Created by devin on 2017/9/14.
  */
-import {Category} from './../entity/category'
+import {Category} from '../entity/category'
 
 export const CATEGORYS: Category[] = [
   {

@@ -1,0 +1,12 @@
+<div class="tuwen">
+  <h3 class="tit">图文推荐</h3>
+  <ul>
+    <li *ngFor="let desc of recommendLists">
+      <a href="{{desc.link}}">
+        <img src="{{desc.cover}}"/>
+        <b>{{desc.title}}</b>
+      </a>
+      <p><span class="tulanmu"><a href="/">{{desc.category}}</a></span><span class="tutime">{{desc.date}}</span></p>
+    </li>
+  </ul>
+</div>

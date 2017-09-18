@@ -1,0 +1,42 @@
+.gzwm ul {
+  width: 100%;
+  overflow: hidden;
+}
+.gzwm li {
+  width: 60px;
+  margin: 0 10px 0 5px;
+  float: left;
+}
+.gzwm li a {
+  color: #747F8C;
+  width: 62px;
+  text-align: center;
+  padding-top: 60px;
+  float: left;
+}
+
+.gzwm .email {
+  background: url(./../../../assets/images/gz01.png) no-repeat;
+}
+.gzwm .qq {
+  background: url(./../../../assets/images/gz02.png) no-repeat;
+}
+.gzwm .tel {
+  background: url(./../../../assets/images/gz03.png) no-repeat;
+}
+.gzwm .prize {
+  background: url(./../../../assets/images/gz04.png) no-repeat;
+}
+.gzwm li a:hover {
+  opacity: 0.6;
+}
+
+.tit {
+  line-height: 44px;
+  color: #fff;
+  font-size: 18px;
+  height: 44px;
+  background: url(./../../../assets/images/rtitbg.png) no-repeat;
+  padding-left: 40px;
+  margin: 0 0 10px 0
+}

@@ -1,0 +1,18 @@
+<div class="article_list">
+
+  <div *ngFor="let desc of articleLists">
+    <h3><a href="{{desc.link}}">{{desc.title}}</a></h3>
+    <figure><img src="{{desc.cover}}" alt="{{desc.title}}"></figure>
+    <ul>
+      <p>{{desc.digest}}</p>
+      <a title="{{desc.title}}" href="{{desc.link}}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+    </ul>
+    <p class="dateview">
+      <span>{{desc.date}}</span>
+      <span>作者：{{desc.author}}</span>
+      <span>{{desc.isSelf?"个人博客":"爬虫博客："}}
+        <span *ngIf="!desc.isSelf">[<a href="{{desc.authorLink}}">心得笔记</a>]</span>
+      </span>
+    </p>
+  </div>
+</div>

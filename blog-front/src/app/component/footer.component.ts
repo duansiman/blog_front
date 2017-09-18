@@ -4,7 +4,7 @@ import { Component, OnInit }    from '@angular/core';
   moduleId: module.id,
   selector: 'blog-footer',
   templateUrl: 'template/footer.component.html',
-  styleUrls: ['css/footer.component.css','css/base.css','css/main.css','css/index.css']
+  styleUrls: ['css/footer.component.css','css/base.css','css/main.css']
 })
 
 export class FooterComponent implements OnInit {

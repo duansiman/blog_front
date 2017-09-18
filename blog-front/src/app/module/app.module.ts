@@ -7,14 +7,19 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent}     from '../component/app.component';
 import {HeaderComponent}  from '../component/header.component';
 import {FooterComponent}  from '../component/footer.component';
-import {BannerComponent}  from '../component/banner.component';
 import {HomeComponent}     from '../component/home.component';
 import {MessageComponent}  from '../component/message.component';
 import {AboutComponent}  from '../component/about.component';
 import {MenuComponent}  from '../component/menu.component';
+import {ContactComponent}  from '../component/contact.component';
+import {ArticleRecommendComponent}  from '../component/article-recommend.component';
+import {ArticleRankingsComponent}  from '../component/article-rankings.component';
+import {AdComponent}  from '../component/ad.component';
+import {ArticleListComponent}  from '../component/article-list.component';
 
 
 import {CategoryService}      from '../service/category.service';
+import {ArticleService} from "../service/article.service";
 
 @NgModule({
   imports: [
@@ -29,15 +34,19 @@ import {CategoryService}      from '../service/category.service';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent,
     HomeComponent,
     MessageComponent,
     AboutComponent,
-    MenuComponent
+    MenuComponent,
+    ContactComponent,
+    ArticleRecommendComponent,
+    ArticleRankingsComponent,
+    AdComponent,
+    ArticleListComponent
   ],
 
   providers: [
-    CategoryService
+    CategoryService, ArticleService
   ],
 
   bootstrap: [AppComponent]

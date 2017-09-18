@@ -1,0 +1,57 @@
+/*文章*/
+.article_list h3 {
+  margin: 20px 0 10px 0;
+  color: #333;
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+.article_list figure {
+  float: left;
+  width: 25%;
+}
+.article_list figure img {
+  padding: 4px;
+  border: #f4f2f2 1px solid;
+  width: 140px;
+}
+.article_list ul {
+  float: left;
+  width: 70%;
+  margin: 10px 0px 0 15px;
+  line-height: 20px;
+}
+.dateview {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  margin: 10px 0 0 0;
+  display: inline-block;
+  background: #f6f6f6 url(./../../../assets/images/time.jpg) 15px center no-repeat;
+  line-height: 26px;
+  height: 26px;
+  color: #838383;
+  padding-left: 25px
+}
+.dateview span {
+  margin: 0 10px;
+}
+.dateview span a {
+  color: #41607d;
+}
+a.readmore {
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  float: right;
+  margin: 20px 0 0 0
+}
+
+.tit {
+  line-height: 44px;
+  color: #fff;
+  font-size: 18px;
+  height: 44px;
+  background: url(./../../../assets/images/rtitbg.png) no-repeat;
+  padding-left: 40px;
+  margin: 0 0 10px 0
+}

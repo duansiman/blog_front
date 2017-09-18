@@ -1,0 +1,33 @@
+/*排行*/
+.rank li {
+  height: 25px;
+  line-height: 25px;
+  clear: both;
+  padding-left: 5px;
+  overflow: hidden;
+  padding-left: 15px;
+  background: url(./../../../assets/images/libg.jpg) no-repeat left center;
+}
+.rank {
+  margin: 10px 0
+}
+.rank li a {
+  color: #333;
+}
+.rank li:first-child a {
+  color: #f00;
+  display: block;
+}
+.ph {
+  overflow: hidden
+}
+
+.tit {
+  line-height: 44px;
+  color: #fff;
+  font-size: 18px;
+  height: 44px;
+  background: url(./../../../assets/images/rtitbg.png) no-repeat;
+  padding-left: 40px;
+  margin: 0 0 10px 0
+}

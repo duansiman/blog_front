@@ -1,0 +1,7 @@
+<div class="ph">
+  <h3 class="tit">点击排行</h3>
+  <ul class="rank">
+    <li *ngFor="let desc of rankingLists">
+      <a href="{{desc.link}}" title="{{desc.title}}" target="_blank">{{desc.title}}</a></li>
+  </ul>
+</div>

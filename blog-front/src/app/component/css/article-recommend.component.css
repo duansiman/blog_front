@@ -1,0 +1,63 @@
+/*图文列表*/
+.tuwen {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  margin: 20px 0
+}
+.tuwen li {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 10px
+}
+.tuwen li img {
+  width: 70px;
+  float: left;
+  margin-right: 15px;
+}
+.tuwen li b {
+  overflow: hidden;
+  /*white-space: nowrap;*/
+  /*text-overflow: ellipsis;*/
+  width: 100%;
+  font-weight: normal;
+  color: #333;
+  font-size: 14px;
+  height: 20px;
+  max-height: 20px;
+  line-height: 20px;
+}
+.tuwen li span {
+  color: #999;
+  margin-right: 10px
+}
+.tuwen p {
+  margin-top: 5px;
+}
+.tulanmu {
+  background: url(./../../../assets/images/lanmbq.png) no-repeat center left;
+  padding-left: 17px
+}
+.tulanmu a {
+  color: #999;
+}
+.tulanmu a:hover {
+  color: #066
+}
+.tutime {
+  background: url(./../../../assets/images/datepng.png) no-repeat left center;
+  padding-left: 15px
+}
+.tuwen li:hover {
+  background: #f4f3f3
+}
+
+.tit {
+  line-height: 44px;
+  color: #fff;
+  font-size: 18px;
+  height: 44px;
+  background: url(./../../../assets/images/rtitbg.png) no-repeat;
+  padding-left: 40px;
+  margin: 0 0 10px 0
+}

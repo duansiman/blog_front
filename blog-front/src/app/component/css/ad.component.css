@@ -1,0 +1,9 @@
+/*首页右侧广告 300*/
+.ad {
+  width: 300px;
+  overflow: hidden;
+  margin: 30px 0
+}
+.ad img {
+  width: 300px;
+}
