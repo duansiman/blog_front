@@ -10,7 +10,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -21,7 +22,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -32,7 +34,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -43,7 +46,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -54,7 +58,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -65,7 +70,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -76,7 +82,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -87,7 +94,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -98,7 +106,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -109,7 +118,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -120,7 +130,8 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   },
   {
     "title":"【心路历程】请不要在设计这条路上徘徊啦",
@@ -131,6 +142,7 @@ export const RANKINGLISTS: ArticleDesc[] = [
     "author":"杨青",
     "isSelf":false,
     "category":"java",
-    "authorLink":""
+    "authorLink":"",
+    "originLink":""
   }
 ];

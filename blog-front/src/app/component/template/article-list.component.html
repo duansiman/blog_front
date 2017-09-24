@@ -9,9 +9,9 @@
     </ul>
     <p class="dateview">
       <span>{{desc.date}}</span>
-      <span>作者：{{desc.author}}</span>
+      <span>作者：[<a href="{{desc.authorLink}}" target="_blank">{{desc.author}}</a>]</span>
       <span>{{desc.isSelf?"个人博客":"爬虫博客："}}
-        <span *ngIf="!desc.isSelf">[<a href="{{desc.authorLink}}">心得笔记</a>]</span>
+        <span *ngIf="!desc.isSelf">[<a href="{{desc.originLink}}" target="_blank">阅读原文</a>]</span>
       </span>
     </p>
   </div>

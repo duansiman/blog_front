@@ -8,4 +8,5 @@ export class ArticleDesc {
   isSelf:boolean;
   category:string;
   authorLink:string;
+  originLink:string;
 }

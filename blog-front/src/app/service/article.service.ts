@@ -11,7 +11,7 @@ import {BaseService} from "./base.service";
 @Injectable()
 export class ArticleService extends BaseService{
 
-	private URL_ARTICLE_HOME = 'http://localhost/blog/api/json/article/home.do';
+	private URL_ARTICLE_HOME = 'http://localhost:8080/api/json/article/home.do';
   private headers = new Headers();
 
 	constructor(private http: Http) {
