@@ -11,11 +11,20 @@ import {ArticleService} from "../service/article.service";
 export class ArticleListComponent implements OnInit  {
 
   articleLists:ArticleDesc[];
+  images = ['../../../assets/images/img_1.jpg','../../../assets/images/img_2.jpg',
+  '../../../assets/images/img_3.jpg','../../../assets/images/img_4.jpg'];
 
   constructor(private articleService: ArticleService) { }
 
   ngOnInit(): void {
-      this.articleLists = this.articleService.getArticlesByHome();
+      this.articleService.getArticlesByHome(0, 10)
+        .then( articleLists => {
+          this.articleLists=articleLists;
+          this.articleLists.forEach((value, index) => {
+            value.cover = this.images[index % 4];
+          })
+        });
+
   }
 
 }
