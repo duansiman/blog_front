@@ -11,8 +11,8 @@ import {BaseService} from "./base.service";
 @Injectable()
 export class ArticleService extends BaseService{
 
-	private URL_ARTICLE_HOME = 'http://localhost:/blog/api/json/article/home.do';
-  private headers = new Headers({'Access-Control-Allow-Origin': 'http://107.174.40.132'});
+	private URL_ARTICLE_HOME = 'http://localhost/blog/api/json/article/home.do';
+  private headers = new Headers();
 
 	constructor(private http: Http) {
 	  super();
@@ -21,7 +21,6 @@ export class ArticleService extends BaseService{
 	getArticlesByHome(start, count):Promise<ArticleDesc[]>{
 	  return this.http
       .get(this.URL_ARTICLE_HOME, {
-        headers:this.headers,
 	      params:{
 	        "start":start,
           "end":count
