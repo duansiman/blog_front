@@ -5,7 +5,7 @@
     <figure><img src="{{desc.cover}}" alt="{{desc.title}}"></figure>
     <ul>
       <p>{{desc.digest}}</p>
-      <a title="{{desc.title}}" href="{{desc.link}}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      <a title="{{desc.title}}" (click)="gotoArticleContent(desc)" href="#" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
     </ul>
     <p class="dateview">
       <span>{{desc.date}}</span>

@@ -16,6 +16,7 @@ import {ArticleRecommendComponent}  from '../component/article-recommend.compone
 import {ArticleRankingsComponent}  from '../component/article-rankings.component';
 import {AdComponent}  from '../component/ad.component';
 import {ArticleListComponent}  from '../component/article-list.component';
+import {ArticleContentComponent}  from '../component/article-content.component';
 
 
 import {CategoryService}      from '../service/category.service';
@@ -43,7 +44,8 @@ import {ArticleService} from "../service/article.service";
     ArticleRecommendComponent,
     ArticleRankingsComponent,
     AdComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ArticleContentComponent
   ],
 
   providers: [

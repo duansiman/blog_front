@@ -7,21 +7,20 @@ import {ARTICLELISTS} from "../mock/mock-article-list"
 import {RANKINGLISTS} from "../mock/mock-ranking-list";
 import {RECOMMENDLISTS} from "../mock/mock-recommend-list";
 import {BaseService} from "./base.service";
+import {URL_ARTICLE_HOME, URL_ARTICLE_RANKING, URL_ARTICLE_TOP} from "../mock/url";
 
 @Injectable()
 export class ArticleService extends BaseService{
-
-	private URL_ARTICLE_HOME = '/blog/api/json/article/home.do';
-  private headers = new Headers();
 
 	constructor(private http: Http) {
 	  super();
   }
 
-	getArticlesByHome(start, count):Promise<ArticleDesc[]>{
+	getArticles(categoryId, start, count):Promise<ArticleDesc[]>{
 	  return this.http
-      .get(this.URL_ARTICLE_HOME, {
+      .get(URL_ARTICLE_HOME, {
 	      params:{
+	        "categoryId":categoryId,
 	        "start":start,
           "end":count
         }
@@ -29,15 +28,34 @@ export class ArticleService extends BaseService{
       .toPromise()
       .then(response => response.json().data as ArticleDesc[])
       .catch(super.handleError);
-    //return ARTICLELISTS;
   }
 
-  getArticlesByRanking():ArticleDesc[]{
-    return RANKINGLISTS;
+  getArticlesByRanking(categoryId, start, count):Promise<ArticleDesc[]>{
+    return this.http
+      .get(URL_ARTICLE_RANKING, {
+        params:{
+          "categoryId":categoryId,
+          "start":start,
+          "end":count
+        }
+      })
+      .toPromise()
+      .then(response => response.json().data as ArticleDesc[])
+      .catch(super.handleError);
   }
 
-  getArticlesByRecommend():ArticleDesc[]{
-    return RECOMMENDLISTS;
+  getArticlesByRecommend(categoryId, start, count):Promise<ArticleDesc[]>{
+    return this.http
+      .get(URL_ARTICLE_TOP, {
+        params:{
+          "categoryId":categoryId,
+          "start":start,
+          "end":count
+        }
+      })
+      .toPromise()
+      .then(response => response.json().data as ArticleDesc[])
+      .catch(super.handleError);
   }
 
 

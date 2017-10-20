@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ArticleDesc} from "../entity/article-desc";
 import {ArticleService} from "../service/article.service";
+import {Router} from "@angular/router";
 
 @Component({
   moduleId: module.id,
@@ -14,10 +15,10 @@ export class ArticleListComponent implements OnInit  {
   images = ['../../../assets/images/img_1.jpg','../../../assets/images/img_2.jpg',
   '../../../assets/images/img_3.jpg','../../../assets/images/img_4.jpg'];
 
-  constructor(private articleService: ArticleService) { }
+  constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit(): void {
-      this.articleService.getArticlesByHome(0, 10)
+      this.articleService.getArticles(-1,0, 10)
         .then( articleLists => {
           this.articleLists=articleLists;
           this.articleLists.forEach((value, index) => {
@@ -25,6 +26,10 @@ export class ArticleListComponent implements OnInit  {
           })
         });
 
+  }
+
+  gotoArticleContent(desc): void {
+    this.router.navigate(['/article-content', desc]);
   }
 
 }
