@@ -18,7 +18,7 @@ export class ArticleRecommendComponent implements OnInit{
   constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit(): void {
-    this.articleService.getArticlesByRanking(-1,0, 10)
+    this.articleService.getArticlesByRecommend(-1,0, 10)
       .then( articleLists => {
         this.recommendLists=articleLists;
         this.recommendLists.forEach((value, index) => {
